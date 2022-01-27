@@ -1,4 +1,4 @@
-//Solitaire_v18.  Arduino RBT using 4D SYSTEMS 4.3” Serial Display Module uLCD-43-DCT
+//Solitaire_v18. using Arduino RBT w/ 4DSYSTEMS 4.3” Serial Display Module uLCD-43-DCT
 #define DisplaySerial Serial1                    
 #include <Diablo_Const4D.h>
 #include <Diablo_Serial_4DLib.h>
