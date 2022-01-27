@@ -72,7 +72,7 @@ void setup() {DisplaySerial.begin(9600);SerialUSB.begin(9600);
   delay (5000);        // let the display start up  
   setbaudWait(BAUD_115200);
   Display.gfx_Contrast(4);
-  Display.gfx_ScreenMode(LANDSCAPE); 
+  Display.gfx_ScreenMode(LANDSCAPE);  // 480 x 272
   Display.touch_Set(TOUCH_ENABLE);
   Display.touch_Set(TOUCH_REGIONDEFAULT);
   Display.gfx_Cls();  //clear the screen
