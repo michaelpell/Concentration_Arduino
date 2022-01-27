@@ -232,10 +232,3 @@ void setbaudWait(word  Newrate)
   SetThisBaudrate(Newrate); // change this systems baud rate to match new display rate, ACK is 100ms away
   Display.GetAck() ;
 }
-//or just print char for char from a start position
-void printPart(char* txt, byte start, byte len){
-//  for(byte i = 0; i < len; i++){
-//    SerialUSB.write(txt[start + i]);
-    //same as
-    SerialUSB.print(*(txt + start + 0));
-  } 
