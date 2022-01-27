@@ -1,4 +1,4 @@
-//Solitaire_v15.
+//Solitaire_v15. using Arduino RBT w/ 4DSYSTEMS 4.3” Serial Display Module uLCD-43-DCT
 #define DisplaySerial Serial1                    
 #include <Diablo_Const4D.h>
 #include <Diablo_Serial_4DLib.h>
@@ -38,7 +38,7 @@ struct Button{
 void setup() {DisplaySerial.begin(9600);SerialUSB.begin(9600);
 
    do{
-     for (int i = 0; i < 4; i++)
+     for (int i = 0; i < 1; i++)
        {   
        randomSeed(analogRead(5));  // Randomize using noise from pin 5.
        int NewNum = random(1, 5);
