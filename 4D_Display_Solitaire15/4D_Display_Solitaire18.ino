@@ -39,7 +39,7 @@ void setup() {DisplaySerial.begin(9600);SerialUSB.begin(9600);
    do{
      for (int i = 0; i < 1; i++)
        {   
-       randomSeed(analogRead(5));  // Randomize using noise from pin 5.
+       randomSeed(analogRead(5));  // Randomize using noise from unused floating pin 5.
        int NewNum = random(1, 29);
              if (Btn1.Tag == NewNum)
              break;
