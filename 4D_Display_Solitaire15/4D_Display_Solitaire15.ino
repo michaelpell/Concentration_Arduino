@@ -64,7 +64,8 @@ void setup() {DisplaySerial.begin(9600);SerialUSB.begin(9600);
     }while (D.Tag == 0);
       
 //For handling errors
-  Display.Callback4D = mycallback ;
+  Display.Callback4D = mycallback;
+//
   pinMode(4, OUTPUT);  // Set D4 on Arduino to Output (4D Arduino Adaptor V2 - Display Reset)
   digitalWrite(4, 0);  // Reset the Display via D4     Demo code = digitalWrite(4, 1);
   delay(100);          // HIGH/LOW RESET REVERSED from Demo programs because I'm not using the shield, but rather direct to RBT wiring.
